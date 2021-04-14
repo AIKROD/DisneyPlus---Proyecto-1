@@ -1,0 +1,9 @@
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.exe.config
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.exe
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.pdb
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csprojAssemblyReference.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Properties.Resources.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.GenerateResource.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CoreCompileInputs.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.exe
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.pdb
