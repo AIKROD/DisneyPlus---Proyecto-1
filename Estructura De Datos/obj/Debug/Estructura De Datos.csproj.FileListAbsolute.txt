@@ -8,3 +8,13 @@ C:\Users\tskev\source\repos\Estructura De Datos\Estructura De Datos\obj\Debug\Es
 C:\Users\tskev\source\repos\Estructura De Datos\Estructura De Datos\obj\Debug\Estructura De Datos.exe
 C:\Users\tskev\source\repos\Estructura De Datos\Estructura De Datos\obj\Debug\Estructura De Datos.pdb
 C:\Users\tskev\source\repos\Estructura De Datos\Estructura De Datos\obj\Debug\Estructura De Datos.csprojAssemblyReference.cache
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\bin\Debug\Estructura De Datos.exe.config
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\bin\Debug\Estructura De Datos.exe
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\bin\Debug\Estructura De Datos.pdb
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.csprojAssemblyReference.cache
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura_De_Datos.Form1.resources
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura_De_Datos.Properties.Resources.resources
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.csproj.GenerateResource.cache
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.csproj.CoreCompileInputs.cache
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.exe
+C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.pdb

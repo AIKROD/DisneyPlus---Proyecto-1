@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisneyPlus - Proyecto 1", "DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1.csproj", "{17AB9639-31F0-408B-9B8D-65214F1B078C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estructura De Datos", "..\Estructura De Datos\Estructura De Datos\Estructura De Datos.csproj", "{63C77231-9F4C-4DAD-98C6-8DC442D32430}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estructura De Datos", "Estructura De Datos\Estructura De Datos.csproj", "{63C77231-9F4C-4DAD-98C6-8DC442D32430}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

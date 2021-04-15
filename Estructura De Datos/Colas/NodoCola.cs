@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Estructura_De_Datos.Colas
 {
-    class NodoCola
+    public class NodoCola
     {
         Object Objeto;
         NodoCola Siguiente;
