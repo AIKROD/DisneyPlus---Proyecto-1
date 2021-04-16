@@ -38,3 +38,10 @@ C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proye
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.exe
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.pdb
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Feed.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.exe
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.pdb
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.exe.config
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Admin.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Feed.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Form1.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CopyComplete
