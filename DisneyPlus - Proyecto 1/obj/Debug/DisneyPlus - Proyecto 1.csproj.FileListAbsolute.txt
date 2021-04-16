@@ -47,3 +47,4 @@ C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\
 C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CopyComplete
 C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Feed.resources
 C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Reproductor.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Reproductor.resources
