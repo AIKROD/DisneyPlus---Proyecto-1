@@ -12,11 +12,11 @@ namespace DisneyPlus___Proyecto_1.Clases
         public int año { get; set; }
         public String categoria { get; set; }
 
-        public Pelicula(String nom, int año, string categoria)
+        public Pelicula(String nom, int anio, string cate)
         {
             nombre = nom;
-            año = año;
-            categoria = categoria;
+            año = anio;
+            categoria = cate;
         }
 
     }

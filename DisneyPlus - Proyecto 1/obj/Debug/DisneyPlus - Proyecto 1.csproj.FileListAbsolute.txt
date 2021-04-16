@@ -22,3 +22,19 @@ C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\D
 C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Admin.resources
 C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Form1.resources
 C:\Users\Astrid97\Documents\Tareas U\2021\PROGRAMACION\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CopyComplete
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.exe.config
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.exe
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\DisneyPlus - Proyecto 1.pdb
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.exe
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.pdb
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\bin\Debug\Estructura De Datos.exe.config
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csprojAssemblyReference.cache
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Admin.resources
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Form1.resources
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Properties.Resources.resources
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.GenerateResource.cache
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CoreCompileInputs.cache
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.csproj.CopyComplete
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.exe
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus - Proyecto 1.pdb
+C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\DisneyPlus - Proyecto 1\obj\Debug\DisneyPlus___Proyecto_1.Feed.resources

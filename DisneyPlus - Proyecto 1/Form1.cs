@@ -20,15 +20,15 @@ namespace DisneyPlus___Proyecto_1
     {
         public ListaDoble Usuarios = new ListaDoble();
         public Lista Disney = new Lista();
-        public Lista Pixar;
-        public Lista Marvel;
-        public Lista Star_Wars;
-        public Lista National_Geographic;
-        Pila Mi_Lista;
-        Cola Continuar_Usuario_1;
-        Cola Continuar_Usuario_2;
-        Cola Continuar_Usuario_3;
-        Cola Continuar_Usuario_4;
+        public Lista Pixar = new Lista();
+        public Lista Marvel = new Lista();
+        public Lista Star_Wars = new Lista();
+        public Lista National_Geographic = new Lista();
+        Pila Mi_Lista = new Pila();
+        Cola Continuar_Usuario_1 = new Cola();
+        Cola Continuar_Usuario_2 = new Cola();
+        Cola Continuar_Usuario_3 = new Cola();
+        Cola Continuar_Usuario_4 = new Cola();
 
 
         public Form1()
@@ -51,22 +51,15 @@ namespace DisneyPlus___Proyecto_1
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Admin frm = new Admin(Disney,  Pixar,  Marvel,  Star_Wars,  National_Geographic);
+            //Admin frm = new Admin(Disney,  Pixar,  Marvel,  Star_Wars,  National_Geographic);
+            Admin frm = new Admin(this);
             frm.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
-            for (int i = 0; i < Disney.NumeroElementos; i++)
-            {
-                Pelicula pelicula = (Pelicula)Disney.complementarRecorrido();
-                Console.Write(pelicula.nombre);
-                Console.Write(" -- ");
-                Console.Write(pelicula.año);
-                Console.Write(" -- ");
-                Console.WriteLine(pelicula.categoria);
-            }
+            Feed frm = new Feed(this);
+            frm.Show();
         }
     }
 }

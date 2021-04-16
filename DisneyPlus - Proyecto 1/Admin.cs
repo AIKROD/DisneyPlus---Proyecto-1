@@ -16,61 +16,143 @@ namespace DisneyPlus___Proyecto_1
 {
     public partial class Admin : Form
     {
-        public Lista Disney;
-        public Lista Pixar;
-        public Lista Marvel;
-        public Lista Star_Wars;
-        public Lista National_Geographic;
+        Form1 frm1;
 
         public Admin()
         {
-
             InitializeComponent();
-
-
         }
 
-        public Admin(Lista disney,Lista pixar,Lista marvel,Lista star_Wars,Lista national_Geographic)
+        //public Admin(Lista disney,Lista pixar,Lista marvel,Lista star_Wars,Lista national_Geographic)
+        public Admin(Form1 frm)
         {
             InitializeComponent();
-              Disney = disney;
-              Pixar = pixar;
-              Marvel = marvel;
-              Star_Wars = star_Wars;
-              National_Geographic = national_Geographic;
-
-               
+            frm1 = frm;
         }
 
         private void btnAgregarPeli_Click(object sender, EventArgs e)
         {
-            Pelicula pelicula;
-
+            Pelicula pelicula = new Pelicula(txtNombre.Text, Int32.Parse(txtAnio.Text), cmbCategoria.Text);
             if (cmbCategoria.Text == "Disney")
             {
-                pelicula = new Pelicula(txtNombre.Text, Int16.Parse(txtAnio.Text.ToString()), "Disney");
-                Disney.Insertar(pelicula);
+                frm1.Disney.Insertar(pelicula);
             }
             else if (cmbCategoria.Text == "Pixar")
             {
-                pelicula = new Pelicula(txtNombre.Text, Int32.Parse(txtAnio.Text), "Pixar");
-                Disney.Insertar(pelicula);
+                frm1.Pixar.Insertar(pelicula);
             }
             else if (cmbCategoria.Text == "Marvel")
             {
-                pelicula = new Pelicula(txtNombre.Text, Int32.Parse(txtAnio.Text), "Marvel");
-                Disney.Insertar(pelicula);
+                frm1.Marvel.Insertar(pelicula);
             }
-            else if (cmbCategoria.Text == "Star_Wars")
+            else if (cmbCategoria.Text == "Star Wars")
             {
-                pelicula = new Pelicula(txtNombre.Text, Int32.Parse(txtAnio.Text), cmbCategoria.Text);
-                Disney.Insertar(pelicula);
+                frm1.Star_Wars.Insertar(pelicula);
             }
-            else
+            else if (cmbCategoria.Text == "National Geographic")
             {
-                pelicula = new Pelicula(txtNombre.Text, Int32.Parse(txtAnio.Text), cmbCategoria.Text);
-                Disney.Insertar(pelicula);
+                frm1.National_Geographic.Insertar(pelicula);
             }
+        }
+
+        private void btnBuscar_Eliminar_Click(object sender, EventArgs e)
+        {
+            VerificarCategoría();
+        }
+        private void VerificarCategoría()
+        {
+            if (cmbCategoria_Eliminar.Text == "Disney")
+            {
+                LlenarLista_Eliminar(frm1.Disney);
+            }
+            else if (cmbCategoria_Eliminar.Text == "Pixar")
+            {
+                LlenarLista_Eliminar(frm1.Pixar);
+            }
+            else if (cmbCategoria_Eliminar.Text == "Marvel")
+            {
+                LlenarLista_Eliminar(frm1.Marvel);
+            }
+            else if (cmbCategoria_Eliminar.Text == "Star Wars")
+            {
+                LlenarLista_Eliminar(frm1.Star_Wars);
+            }
+            else if (cmbCategoria_Eliminar.Text == "National Geographic")
+            {
+                LlenarLista_Eliminar(frm1.National_Geographic);
+            }
+        }
+        private void LlenarLista_Eliminar(Lista lst)
+        {
+            lbCategorias_Eliminar.Items.Clear();
+            for (int i = 0; i < lst.NumeroElementos; i++)
+            {
+                Pelicula pelicula = (Pelicula)lst.complementarRecorrido();
+                lbCategorias_Eliminar.Items.Add(pelicula.nombre);
+            }
+            lst.ReiniciarActual();
+        }
+
+        private void btnEliminar_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (cmbCategoria_Eliminar.Text == "Disney")
+            {
+                EliminarDeLista(frm1.Disney, lbCategorias_Eliminar.SelectedItem.ToString());
+            }
+            else if (cmbCategoria_Eliminar.Text == "Pixar")
+            {
+                EliminarDeLista(frm1.Pixar, lbCategorias_Eliminar.SelectedItem.ToString());
+            }
+            else if (cmbCategoria_Eliminar.Text == "Marvel")
+            {
+                EliminarDeLista(frm1.Marvel, lbCategorias_Eliminar.SelectedItem.ToString());
+            }
+            else if (cmbCategoria_Eliminar.Text == "Star Wars")
+            {
+                EliminarDeLista(frm1.Star_Wars, lbCategorias_Eliminar.SelectedItem.ToString());
+            }
+            else if (cmbCategoria_Eliminar.Text == "National Geographic")
+            {
+                EliminarDeLista(frm1.National_Geographic, lbCategorias_Eliminar.SelectedItem.ToString());
+            }
+        }
+
+        private void EliminarDeLista(Lista lst, String NombrePelicula)
+        {
+            for (int i = 0; i < lst.NumeroElementos; i++)
+            {
+                Pelicula pelicula = (Pelicula)lst.complementarRecorrido();
+                if(pelicula.nombre == NombrePelicula)
+                {
+                    if (lst.EliminarElemento(lst.Actual))
+                    {
+                        lst.ReiniciarActual();
+                        break;
+                    }
+                }
+            }
+            lst.ReiniciarActual();
+            VerificarCategoría();
+            btnEliminar_Eliminar.Enabled = false;
+
+        }
+
+        private void cmbCategoria_Eliminar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VerificarCategoría();
+        }
+
+        private void lbCategorias_Eliminar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbCategorias_Eliminar.SelectedIndex >= 0 )
+            {
+                btnEliminar_Eliminar.Enabled = true;
+            }
+        }
+
+        private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnAgregarPeli.Enabled = true;
         }
     }
 }

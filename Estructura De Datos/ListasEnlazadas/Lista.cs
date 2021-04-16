@@ -61,5 +61,34 @@ namespace Estructura_De_Datos.ListasEnlazadas
             }
             return obtenerElemento(Actual);
         }
+
+        public void ReiniciarActual()
+        {
+            Actual = null;
+        }
+        public Boolean EliminarElemento(NodoLista nodo)
+        {
+            NodoLista aux = Inicio;
+            while(aux != null)
+            {
+                if(aux.enlace == nodo)
+                {
+                    aux.enlace = nodo.enlace;
+                    NumeroElementos--;
+                    return true;
+                } 
+                else if (aux == nodo)
+                {
+                    Inicio = nodo.enlace; ;
+                    NumeroElementos--;
+                    return true;
+                }
+                else
+                {
+                    aux = aux.enlace;
+                }
+            }
+            return false;
+        }
     }
 }
