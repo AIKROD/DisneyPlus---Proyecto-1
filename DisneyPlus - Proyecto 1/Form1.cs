@@ -24,11 +24,13 @@ namespace DisneyPlus___Proyecto_1
         public Lista Marvel = new Lista();
         public Lista Star_Wars = new Lista();
         public Lista National_Geographic = new Lista();
-        Pila Mi_Lista = new Pila();
-        Cola Continuar_Usuario_1 = new Cola();
-        Cola Continuar_Usuario_2 = new Cola();
-        Cola Continuar_Usuario_3 = new Cola();
-        Cola Continuar_Usuario_4 = new Cola();
+        public Pila Mi_Lista = new Pila();
+        public Pila Mi_Lista_2 = new Pila();
+        public Pila Mi_Lista_3 = new Pila();
+        public Cola Continuar_Usuario_1 = new Cola();
+        public Cola Continuar_Usuario_2 = new Cola();
+        public Cola Continuar_Usuario_3 = new Cola();
+        public int numero_usuario = 0;
 
 
         public Form1()
@@ -51,6 +53,7 @@ namespace DisneyPlus___Proyecto_1
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            numero_usuario = 4;
             //Admin frm = new Admin(Disney,  Pixar,  Marvel,  Star_Wars,  National_Geographic);
             Admin frm = new Admin(this);
             frm.Show();
@@ -58,6 +61,21 @@ namespace DisneyPlus___Proyecto_1
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            numero_usuario = 3;
+            Feed frm = new Feed(this);
+            frm.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            numero_usuario = 2;
+            Feed frm = new Feed(this);
+            frm.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            numero_usuario = 1;
             Feed frm = new Feed(this);
             frm.Show();
         }

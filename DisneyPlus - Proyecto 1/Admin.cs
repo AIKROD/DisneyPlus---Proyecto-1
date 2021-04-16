@@ -53,6 +53,7 @@ namespace DisneyPlus___Proyecto_1
             {
                 frm1.National_Geographic.Insertar(pelicula);
             }
+
         }
 
         private void btnBuscar_Eliminar_Click(object sender, EventArgs e)

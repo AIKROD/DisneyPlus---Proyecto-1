@@ -37,9 +37,10 @@ namespace Estructura_De_Datos
             // 
             // btn_ListaDoble
             // 
-            this.btn_ListaDoble.Location = new System.Drawing.Point(586, 487);
+            this.btn_ListaDoble.Location = new System.Drawing.Point(220, 204);
+            this.btn_ListaDoble.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_ListaDoble.Name = "btn_ListaDoble";
-            this.btn_ListaDoble.Size = new System.Drawing.Size(212, 61);
+            this.btn_ListaDoble.Size = new System.Drawing.Size(80, 26);
             this.btn_ListaDoble.TabIndex = 0;
             this.btn_ListaDoble.Text = "Lista Doble";
             this.btn_ListaDoble.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@ namespace Estructura_De_Datos
             // 
             // btn_ListaEnlazada
             // 
-            this.btn_ListaEnlazada.Location = new System.Drawing.Point(193, 487);
+            this.btn_ListaEnlazada.Location = new System.Drawing.Point(72, 204);
+            this.btn_ListaEnlazada.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_ListaEnlazada.Name = "btn_ListaEnlazada";
-            this.btn_ListaEnlazada.Size = new System.Drawing.Size(212, 61);
+            this.btn_ListaEnlazada.Size = new System.Drawing.Size(80, 26);
             this.btn_ListaEnlazada.TabIndex = 1;
             this.btn_ListaEnlazada.Text = "Lista Enlazada";
             this.btn_ListaEnlazada.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@ namespace Estructura_De_Datos
             // 
             // btn_Colas
             // 
-            this.btn_Colas.Location = new System.Drawing.Point(998, 487);
+            this.btn_Colas.Location = new System.Drawing.Point(374, 204);
+            this.btn_Colas.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Colas.Name = "btn_Colas";
-            this.btn_Colas.Size = new System.Drawing.Size(220, 61);
+            this.btn_Colas.Size = new System.Drawing.Size(82, 26);
             this.btn_Colas.TabIndex = 2;
             this.btn_Colas.Text = "Colas";
             this.btn_Colas.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@ namespace Estructura_De_Datos
             // 
             // btnPila
             // 
-            this.btnPila.Location = new System.Drawing.Point(1441, 487);
+            this.btnPila.Location = new System.Drawing.Point(540, 204);
+            this.btnPila.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnPila.Name = "btnPila";
-            this.btnPila.Size = new System.Drawing.Size(201, 61);
+            this.btnPila.Size = new System.Drawing.Size(75, 26);
             this.btnPila.TabIndex = 3;
             this.btnPila.Text = "Pila";
             this.btnPila.UseVisualStyleBackColor = true;
@@ -77,13 +81,14 @@ namespace Estructura_De_Datos
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1840, 821);
+            this.ClientSize = new System.Drawing.Size(689, 354);
             this.Controls.Add(this.btnPila);
             this.Controls.Add(this.btn_Colas);
             this.Controls.Add(this.btn_ListaEnlazada);
             this.Controls.Add(this.btn_ListaDoble);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

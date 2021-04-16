@@ -107,6 +107,7 @@ namespace DisneyPlus___Proyecto_1
             this.pictureBox4.Size = new System.Drawing.Size(104, 102);
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -129,6 +130,7 @@ namespace DisneyPlus___Proyecto_1
             this.pictureBox2.Size = new System.Drawing.Size(101, 102);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 

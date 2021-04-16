@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DisneyPlus___Proyecto_1.Clases
 {
-    class Pelicula
+    public class Pelicula
     {
         public String nombre { get; set; }
         public int año { get; set; }
