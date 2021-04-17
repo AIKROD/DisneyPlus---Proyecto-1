@@ -51,7 +51,6 @@ namespace DisneyPlus___Proyecto_1
             this.gbContinuarViendo = new System.Windows.Forms.GroupBox();
             this.gbPeliculaLista.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.gbMiLista.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAgregarList
@@ -219,7 +218,7 @@ namespace DisneyPlus___Proyecto_1
             this.continuarViendoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1673, 52);
+            this.menuStrip1.Size = new System.Drawing.Size(1673, 49);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -228,6 +227,7 @@ namespace DisneyPlus___Proyecto_1
             this.disneyToolStripMenuItem.Name = "disneyToolStripMenuItem";
             this.disneyToolStripMenuItem.Size = new System.Drawing.Size(152, 48);
             this.disneyToolStripMenuItem.Text = "Disney+";
+            this.disneyToolStripMenuItem.Click += new System.EventHandler(this.disneyToolStripMenuItem_Click);
             // 
             // miListaToolStripMenuItem
             // 
@@ -241,10 +241,10 @@ namespace DisneyPlus___Proyecto_1
             this.continuarViendoToolStripMenuItem.Name = "continuarViendoToolStripMenuItem";
             this.continuarViendoToolStripMenuItem.Size = new System.Drawing.Size(275, 48);
             this.continuarViendoToolStripMenuItem.Text = "Continuar Viendo";
+            this.continuarViendoToolStripMenuItem.Click += new System.EventHandler(this.continuarViendoToolStripMenuItem_Click);
             // 
             // gbMiLista
             // 
-            this.gbMiLista.Controls.Add(this.gbContinuarViendo);
             this.gbMiLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbMiLista.ForeColor = System.Drawing.Color.White;
             this.gbMiLista.Location = new System.Drawing.Point(12, 459);
@@ -259,7 +259,7 @@ namespace DisneyPlus___Proyecto_1
             // 
             this.gbContinuarViendo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbContinuarViendo.ForeColor = System.Drawing.Color.White;
-            this.gbContinuarViendo.Location = new System.Drawing.Point(0, 28);
+            this.gbContinuarViendo.Location = new System.Drawing.Point(12, 504);
             this.gbContinuarViendo.Name = "gbContinuarViendo";
             this.gbContinuarViendo.Size = new System.Drawing.Size(1624, 178);
             this.gbContinuarViendo.TabIndex = 6;
@@ -273,6 +273,7 @@ namespace DisneyPlus___Proyecto_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(1673, 1459);
+            this.Controls.Add(this.gbContinuarViendo);
             this.Controls.Add(this.gbMiLista);
             this.Controls.Add(this.gbNationalGeographic);
             this.Controls.Add(this.gbStarWars);
@@ -293,7 +294,6 @@ namespace DisneyPlus___Proyecto_1
             this.gbPeliculaLista.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.gbMiLista.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

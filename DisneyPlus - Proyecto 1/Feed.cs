@@ -114,6 +114,24 @@ namespace DisneyPlus___Proyecto_1
             gbMiLista.Controls.Add(lvCategory);
         }
 
+        private void RecorrerCola_feed(Cola cla, string grupo)
+        {
+            ListView lvCategory = CrearListView();
+
+            while (cla.getActual() != cla.getUltimo())
+            {
+                Pelicula pelicula = (Pelicula)cla.complementarRecorrido();
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = pelicula.nombre;
+                lvi.Name = pelicula.categoria + "_" + pelicula.nombre;
+                lvCategory.Items.Add(lvi);
+            }
+            cla.reiniciarActual();
+
+            gbContinuarViendo.Controls.Add(lvCategory);
+        }
+
+
         private void lvCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListView lvCategory = (ListView)sender;
@@ -144,7 +162,33 @@ namespace DisneyPlus___Proyecto_1
                 }
                 else if (lvCategory.SelectedItems[0].Name.ToString() == "Mi Lista_" + lvCategory.SelectedItems[0].Text)
                 {
-                    pelicula = buscarPeliculaMiLista(frm1.Mi_Lista, lvCategory.SelectedItems[0].Text.ToString());
+                    if (frm1.numero_usuario == 1)
+                    {
+                        pelicula = buscarPeliculaMiLista(frm1.Mi_Lista, lvCategory.SelectedItems[0].Text.ToString());
+                    }
+                    else if (frm1.numero_usuario == 2)
+                    {
+                        pelicula = buscarPeliculaMiLista(frm1.Mi_Lista_2, lvCategory.SelectedItems[0].Text.ToString());
+                    }
+                    if (frm1.numero_usuario == 3)
+                    {
+                        pelicula = buscarPeliculaMiLista(frm1.Mi_Lista_3, lvCategory.SelectedItems[0].Text.ToString());
+                    }
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "Continuar Viendo_" + lvCategory.SelectedItems[0].Text)
+                {
+                    if (frm1.numero_usuario == 1)
+                    {
+                        pelicula = buscarPeliculaContinuarViendo(frm1.Continuar_Usuario_1, lvCategory.SelectedItems[0].Text.ToString());
+                    }
+                    else if (frm1.numero_usuario == 2)
+                    {
+                        pelicula = buscarPeliculaContinuarViendo(frm1.Continuar_Usuario_2, lvCategory.SelectedItems[0].Text.ToString());
+                    }
+                    if (frm1.numero_usuario == 3)
+                    {
+                        pelicula = buscarPeliculaContinuarViendo(frm1.Continuar_Usuario_3, lvCategory.SelectedItems[0].Text.ToString());
+                    }
                 }
                 else
                 {
@@ -209,9 +253,40 @@ namespace DisneyPlus___Proyecto_1
             return null;
         }
 
+        private Pelicula buscarPeliculaContinuarViendo(Cola cla, String peli)
+        {
+            while (cla.getActual() != cla.getUltimo())
+            {
+                pelicula = (Pelicula)cla.complementarRecorrido();
+                if (pelicula.nombre == peli)
+                {
+                    cla.reiniciarActual();
+                    return pelicula;
+                }
+            }
+            cla.reiniciarActual();
+            return null;
+        }
+
         private void btnVerPeli_Click(object sender, EventArgs e)
         {
             Reproductor frm = new Reproductor(frm1, pelicula);
+            if (gbContinuarViendo.Visible == true)
+            {
+                if (frm1.numero_usuario == 1)
+                {
+                    frm1.Continuar_Usuario_1.eliminarFrente();
+                }
+                else if (frm1.numero_usuario == 2)
+                {
+                    frm1.Continuar_Usuario_2.eliminarFrente();
+                }
+                else if (frm1.numero_usuario == 3)
+                {
+                    frm1.Continuar_Usuario_3.eliminarFrente();
+                }
+            }
+
             frm.Show();
             this.Close();
         }
@@ -230,19 +305,80 @@ namespace DisneyPlus___Proyecto_1
             gbStarWars.Visible = false;
             gbNationalGeographic.Visible = false;
 
-            gbContinuarViendo.Controls.RemoveAt(0);
-            gbMiLista.Controls.RemoveAt(0);
-            groupBox1.Controls.RemoveAt(0);
-            gbPixar.Controls.RemoveAt(0);
-            gbMarvel.Controls.RemoveAt(0);
-            gbStarWars.Controls.RemoveAt(0);
-            gbNationalGeographic.Controls.RemoveAt(0);
+            if (gbContinuarViendo.Controls.Count > 0)
+            {
+                gbContinuarViendo.Controls.RemoveAt(0);
+            }
+            if (gbMiLista.Controls.Count > 0)
+            {
+                gbMiLista.Controls.RemoveAt(0);
+            }
+            if (groupBox1.Controls.Count > 0)
+            {
+                groupBox1.Controls.RemoveAt(0);
+            }
+            if (gbPixar.Controls.Count > 0)
+            {
+                gbPixar.Controls.RemoveAt(0);
+            }
+            if (gbMarvel.Controls.Count > 0)
+            {
+                gbMarvel.Controls.RemoveAt(0);
+            }
+            if (gbStarWars.Controls.Count > 0)
+            {
+                gbStarWars.Controls.RemoveAt(0);
+            }
+            if (gbNationalGeographic.Controls.Count > 0)
+            {
+                gbNationalGeographic.Controls.RemoveAt(0);
+            }
         }
         private void miListaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LimpiarGrupos();
+            Actualizar_feed();
             gbMiLista.Visible = true;
-            RecorrerPila_feed(frm1.Mi_Lista, "Mi Lista");
+        }
+        private void continuarViendoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Actualizar_feed();
+            gbContinuarViendo.Visible = true;
+        }
+
+        private void disneyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Actualizar_feed();
+            groupBox1.Visible = true;
+            gbPixar.Visible = true;
+            gbMarvel.Visible = true;
+            gbStarWars.Visible = true;
+            gbNationalGeographic.Visible = true;
+        }
+        private void Actualizar_feed()
+        {
+            LimpiarGrupos();
+
+            if (frm1.numero_usuario == 1)
+            {
+                RecorrerPila_feed(frm1.Mi_Lista, "Mi Lista");
+                RecorrerCola_feed(frm1.Continuar_Usuario_1, "Mi Lista");
+            }
+            else if (frm1.numero_usuario == 2)
+            {
+                RecorrerPila_feed(frm1.Mi_Lista_2, "Mi Lista");
+                RecorrerCola_feed(frm1.Continuar_Usuario_2, "Mi Lista");
+            }
+            else if (frm1.numero_usuario == 3)
+            {
+                RecorrerPila_feed(frm1.Mi_Lista_3, "Mi Lista");
+                RecorrerCola_feed(frm1.Continuar_Usuario_3, "Mi Lista");
+            }
+
+            RecorrerLista_feed(frm1.Disney, "Disney");
+            RecorrerLista_feed(frm1.Pixar, "Pixar");
+            RecorrerLista_feed(frm1.Marvel, "Marvel");
+            RecorrerLista_feed(frm1.Star_Wars, "Star Wars");
+            RecorrerLista_feed(frm1.National_Geographic, "National Geographic");
         }
     }
 }
