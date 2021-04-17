@@ -42,93 +42,114 @@ namespace DisneyPlus___Proyecto_1
             }
         }
 
-        private void RecorrerLista_feed(Lista lst, string grupo)
+        private ListView CrearListView()
         {
-            //ListViewGroup lvg = new ListViewGroup();
-            //lvg.Name = grupo;
-            //lvg.Header = grupo;
-            
-            //listView1.Groups.Add(lvg);
-
             ListView lvCategory = new ListView();
             lvCategory.View = View.LargeIcon;
             lvCategory.BorderStyle = BorderStyle.None;
-            lvCategory.Cursor = Cursors.Hand;//Set the mouse to hand
-
-            //lvCategory.Left = 430;
+            lvCategory.Cursor = Cursors.Hand;
             lvCategory.Width = 590;
-            //lvCategory.Dock = (DockStyle.Right && Dock );
-            //lvCategory.Dock = DockStyle.Left;
-            //lvCategory.Dock = DockStyle.;
-            //lvCategory.Dock = DockStyle.Right;
-
             lvCategory.Height = 55;
             lvCategory.Top = 15;
-            //lvCategory.Bottom = 10;
             lvCategory.Left = 10;
-            //lvCategory.Right = 10;
             lvCategory.Alignment = ListViewAlignment.Left;
-            
-            //lvCategory.Anchor = AnchorStyles.Right;
-            //lvCategory.BackColor = Color.lFromArgb(216, 222, 230);//Background color
+            lvCategory.BackColor = Color.FromArgb(35, 39, 55);
+            lvCategory.ForeColor = Color.White;
             lvCategory.SelectedIndexChanged += new EventHandler(lvCategory_SelectedIndexChanged);
             lvCategory.View = View.Tile;
 
+            return lvCategory;
+        }
+        private void RecorrerLista_feed(Lista lst, string grupo)
+        {
+            ListView lvCategory = CrearListView();
 
             for (int i = 0; i < lst.NumeroElementos; i++)
             {
                 Pelicula pelicula = (Pelicula)lst.complementarRecorrido();
                 ListViewItem lvi = new ListViewItem();
                 lvi.Text = pelicula.nombre;
-                //lvi.EnsureVisible();
-
-                //listView1.Items.Add(lvi);
-
-
-                //Add a click event
-                //lvCategory.SelectedIndexChanged += new EventHandler(lvCategory_SelectedIndexChanged);
-                //lvCategory.Groups.Add(lvg);
+                lvi.Name = pelicula.categoria + "_" + pelicula.nombre;
                 lvCategory.Items.Add(lvi);
 
             }
             lst.ReiniciarActual();
-            groupBox1.Controls.Add(lvCategory);
+            if (grupo == "Disney")
+            {
+                groupBox1.Controls.Add(lvCategory);
+            }
+            else if (grupo == "Pixar")
+            {
+                gbPixar.Controls.Add(lvCategory);
+            } 
+            else if (grupo == "Marvel")
+            {
+                gbMarvel.Controls.Add(lvCategory);
+            }
+            else if (grupo == "Star Wars")
+            {
+                gbStarWars.Controls.Add(lvCategory);
+            }
+            else if (grupo == "National Geographic")
+            {
+                gbNationalGeographic.Controls.Add(lvCategory);
+            }
 
+        }
+
+        private void RecorrerPila_feed(Pila pla, string grupo)
+        {
+            ListView lvCategory = CrearListView();
+
+            while (pla.getActual() != pla.getUltimo())
+            {
+                Pelicula pelicula = (Pelicula)pla.complementarRecorrido();
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = pelicula.nombre;
+                lvi.Name = pelicula.categoria + "_" + pelicula.nombre;
+                lvCategory.Items.Add(lvi);
+            }
+            pla.reiniciarActual();
+
+            gbMiLista.Controls.Add(lvCategory);
         }
 
         private void lvCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ListView lvCategory = (ListView)sender;//Get dynamically created listview object
-
+            ListView lvCategory = (ListView)sender;
 
             if (lvCategory.SelectedItems.Count > 0)
             {
                 btnVerPeli.Enabled = true;
                 btnAgregarList.Enabled = true;
-                //if (lvCategory.SelectedItems[0].ToString() == "Disney")
-                //{
+                if (lvCategory.SelectedItems[0].Name.ToString() == "Disney_" + lvCategory.SelectedItems[0].Text)
+                {
                     pelicula = buscarPelicula(frm1.Disney, lvCategory.SelectedItems[0].Text.ToString());
-                //}
-                //else if (lvCategory.SelectedItems[0].ToString() == "Pixar")
-                //{
-                //    pelicula = buscarPelicula(frm1.Pixar, lvCategory.SelectedItems[0].Text.ToString());
-                //}
-                //else if (lvCategory.SelectedItems[0].ToString() == "Marvel")
-                //{
-                //    pelicula = buscarPelicula(frm1.Marvel, lvCategory.SelectedItems[0].Text.ToString());
-                //}
-                //else if (lvCategory.SelectedItems[0].ToString() == "Star Wars")
-                //{
-                //    pelicula = buscarPelicula(frm1.Star_Wars, lvCategory.SelectedItems[0].Text.ToString());
-                //}
-                //else if (lvCategory.SelectedItems[0].ToString() == "National Geographic")
-                //{
-                //    pelicula = buscarPelicula(frm1.National_Geographic, lvCategory.SelectedItems[0].Text.ToString());
-                //}
-                //else
-                //{
-                //    pelicula = null;
-                //}
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "Pixar_" + lvCategory.SelectedItems[0].Text)
+                {
+                    pelicula = buscarPelicula(frm1.Pixar, lvCategory.SelectedItems[0].Text.ToString());
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "Marvel_" + lvCategory.SelectedItems[0].Text)
+                {
+                    pelicula = buscarPelicula(frm1.Marvel, lvCategory.SelectedItems[0].Text.ToString());
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "Star Wars_" + lvCategory.SelectedItems[0].Text)
+                {
+                    pelicula = buscarPelicula(frm1.Star_Wars, lvCategory.SelectedItems[0].Text.ToString());
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "National Geographic_" + lvCategory.SelectedItems[0].Text)
+                {
+                    pelicula = buscarPelicula(frm1.National_Geographic, lvCategory.SelectedItems[0].Text.ToString());
+                }
+                else if (lvCategory.SelectedItems[0].Name.ToString() == "Mi Lista_" + lvCategory.SelectedItems[0].Text)
+                {
+                    pelicula = buscarPeliculaMiLista(frm1.Mi_Lista, lvCategory.SelectedItems[0].Text.ToString());
+                }
+                else
+                {
+                    pelicula = null;
+                }
 
                 lblNombreLista.Text = pelicula.nombre;
                 lblAnioLista.Text = pelicula.año.ToString();
@@ -173,42 +194,19 @@ namespace DisneyPlus___Proyecto_1
             return null;
         }
 
-        private void listView1_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        private Pelicula buscarPeliculaMiLista(Pila pla, String peli)
         {
-            if (listView1.SelectedItems.Count >0)
+            while (pla.getActual() != pla.getUltimo())
             {
-                btnVerPeli.Enabled = true;
-                btnAgregarList.Enabled = true;
-                if (listView1.SelectedItems[0].Group.ToString() == "Disney")
+                pelicula = (Pelicula)pla.complementarRecorrido();
+                if (pelicula.nombre == peli)
                 {
-                    pelicula = buscarPelicula(frm1.Disney, listView1.SelectedItems[0].Text.ToString());
+                    pla.reiniciarActual();
+                    return pelicula;
                 }
-                else if (listView1.SelectedItems[0].Group.ToString() == "Pixar")
-                {
-                    pelicula = buscarPelicula(frm1.Pixar, listView1.SelectedItems[0].Text.ToString());
-                }
-                else if (listView1.SelectedItems[0].Group.ToString() == "Marvel")
-                {
-                    pelicula = buscarPelicula(frm1.Marvel, listView1.SelectedItems[0].Text.ToString());
-                }
-                else if (listView1.SelectedItems[0].Group.ToString() == "Star Wars")
-                {
-                    pelicula = buscarPelicula(frm1.Star_Wars, listView1.SelectedItems[0].Text.ToString());
-                }
-                else if (listView1.SelectedItems[0].Group.ToString() == "National Geographic")
-                {
-                    pelicula = buscarPelicula(frm1.National_Geographic, listView1.SelectedItems[0].Text.ToString());
-                }
-                else
-                {
-                    pelicula = null;
-                }
-
-                lblNombreLista.Text = pelicula.nombre;
-                lblAnioLista.Text = pelicula.año.ToString();
-                lblCategoriaLista.Text = pelicula.categoria.ToString();
             }
-            
+            pla.reiniciarActual();
+            return null;
         }
 
         private void btnVerPeli_Click(object sender, EventArgs e)
@@ -216,6 +214,35 @@ namespace DisneyPlus___Proyecto_1
             Reproductor frm = new Reproductor(frm1, pelicula);
             frm.Show();
             this.Close();
+        }
+
+        private void LimpiarGrupos()
+        {
+            pelicula = null;
+            lblNombreLista.Text = "";
+            lblAnioLista.Text = "";
+            lblCategoriaLista.Text = "";
+            gbContinuarViendo.Visible = false;
+            gbMiLista.Visible = false;
+            groupBox1.Visible = false;
+            gbPixar.Visible = false;
+            gbMarvel.Visible = false;
+            gbStarWars.Visible = false;
+            gbNationalGeographic.Visible = false;
+
+            gbContinuarViendo.Controls.RemoveAt(0);
+            gbMiLista.Controls.RemoveAt(0);
+            groupBox1.Controls.RemoveAt(0);
+            gbPixar.Controls.RemoveAt(0);
+            gbMarvel.Controls.RemoveAt(0);
+            gbStarWars.Controls.RemoveAt(0);
+            gbNationalGeographic.Controls.RemoveAt(0);
+        }
+        private void miListaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LimpiarGrupos();
+            gbMiLista.Visible = true;
+            RecorrerPila_feed(frm1.Mi_Lista, "Mi Lista");
         }
     }
 }

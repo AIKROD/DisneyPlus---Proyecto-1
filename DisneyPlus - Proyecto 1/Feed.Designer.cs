@@ -29,9 +29,6 @@ namespace DisneyPlus___Proyecto_1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ColumnHeader columnHeader1;
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAgregarList = new System.Windows.Forms.Button();
             this.gbPeliculaLista = new System.Windows.Forms.GroupBox();
             this.lblCategoriaLista = new System.Windows.Forms.Label();
@@ -42,36 +39,25 @@ namespace DisneyPlus___Proyecto_1
             this.label1 = new System.Windows.Forms.Label();
             this.btnVerPeli = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gbPixar = new System.Windows.Forms.GroupBox();
+            this.gbMarvel = new System.Windows.Forms.GroupBox();
+            this.gbStarWars = new System.Windows.Forms.GroupBox();
+            this.gbNationalGeographic = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.disneyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.continuarViendoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gbMiLista = new System.Windows.Forms.GroupBox();
+            this.gbContinuarViendo = new System.Windows.Forms.GroupBox();
             this.gbPeliculaLista.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.gbMiLista.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Left;
-            this.listView1.BackColor = System.Drawing.Color.Azure;
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            columnHeader1,
-            this.columnHeader2});
-            this.listView1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.listView1.GridLines = true;
-            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(30, 425);
-            this.listView1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1624, 291);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView1_ItemSelectionChanged);
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // btnAgregarList
             // 
             this.btnAgregarList.Enabled = false;
-            this.btnAgregarList.Location = new System.Drawing.Point(1080, 112);
+            this.btnAgregarList.Location = new System.Drawing.Point(1080, 186);
             this.btnAgregarList.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnAgregarList.Name = "btnAgregarList";
             this.btnAgregarList.Size = new System.Drawing.Size(440, 62);
@@ -82,13 +68,15 @@ namespace DisneyPlus___Proyecto_1
             // 
             // gbPeliculaLista
             // 
+            this.gbPeliculaLista.BackColor = System.Drawing.Color.DarkSlateGray;
             this.gbPeliculaLista.Controls.Add(this.lblCategoriaLista);
             this.gbPeliculaLista.Controls.Add(this.lblAnioLista);
             this.gbPeliculaLista.Controls.Add(this.lblNombreLista);
             this.gbPeliculaLista.Controls.Add(this.label3);
             this.gbPeliculaLista.Controls.Add(this.label2);
             this.gbPeliculaLista.Controls.Add(this.label1);
-            this.gbPeliculaLista.Location = new System.Drawing.Point(171, 76);
+            this.gbPeliculaLista.ForeColor = System.Drawing.Color.White;
+            this.gbPeliculaLista.Location = new System.Drawing.Point(171, 150);
             this.gbPeliculaLista.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.gbPeliculaLista.Name = "gbPeliculaLista";
             this.gbPeliculaLista.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -157,7 +145,7 @@ namespace DisneyPlus___Proyecto_1
             // btnVerPeli
             // 
             this.btnVerPeli.Enabled = false;
-            this.btnVerPeli.Location = new System.Drawing.Point(1080, 217);
+            this.btnVerPeli.Location = new System.Drawing.Point(1080, 291);
             this.btnVerPeli.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnVerPeli.Name = "btnVerPeli";
             this.btnVerPeli.Size = new System.Drawing.Size(440, 62);
@@ -168,37 +156,150 @@ namespace DisneyPlus___Proyecto_1
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(30, 753);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(12, 427);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1624, 178);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Disney";
+            // 
+            // gbPixar
+            // 
+            this.gbPixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPixar.ForeColor = System.Drawing.Color.White;
+            this.gbPixar.Location = new System.Drawing.Point(12, 631);
+            this.gbPixar.Name = "gbPixar";
+            this.gbPixar.Size = new System.Drawing.Size(1624, 178);
+            this.gbPixar.TabIndex = 5;
+            this.gbPixar.TabStop = false;
+            this.gbPixar.Text = "Pixar";
+            // 
+            // gbMarvel
+            // 
+            this.gbMarvel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbMarvel.ForeColor = System.Drawing.Color.White;
+            this.gbMarvel.Location = new System.Drawing.Point(12, 826);
+            this.gbMarvel.Name = "gbMarvel";
+            this.gbMarvel.Size = new System.Drawing.Size(1624, 178);
+            this.gbMarvel.TabIndex = 6;
+            this.gbMarvel.TabStop = false;
+            this.gbMarvel.Text = "Marvel";
+            // 
+            // gbStarWars
+            // 
+            this.gbStarWars.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbStarWars.ForeColor = System.Drawing.Color.White;
+            this.gbStarWars.Location = new System.Drawing.Point(12, 1025);
+            this.gbStarWars.Name = "gbStarWars";
+            this.gbStarWars.Size = new System.Drawing.Size(1624, 178);
+            this.gbStarWars.TabIndex = 7;
+            this.gbStarWars.TabStop = false;
+            this.gbStarWars.Text = "Star Wars";
+            // 
+            // gbNationalGeographic
+            // 
+            this.gbNationalGeographic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbNationalGeographic.ForeColor = System.Drawing.Color.White;
+            this.gbNationalGeographic.Location = new System.Drawing.Point(12, 1228);
+            this.gbNationalGeographic.Name = "gbNationalGeographic";
+            this.gbNationalGeographic.Size = new System.Drawing.Size(1624, 178);
+            this.gbNationalGeographic.TabIndex = 8;
+            this.gbNationalGeographic.TabStop = false;
+            this.gbNationalGeographic.Text = "National Geographic";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.disneyToolStripMenuItem,
+            this.miListaToolStripMenuItem,
+            this.continuarViendoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1673, 52);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // disneyToolStripMenuItem
+            // 
+            this.disneyToolStripMenuItem.Name = "disneyToolStripMenuItem";
+            this.disneyToolStripMenuItem.Size = new System.Drawing.Size(152, 48);
+            this.disneyToolStripMenuItem.Text = "Disney+";
+            // 
+            // miListaToolStripMenuItem
+            // 
+            this.miListaToolStripMenuItem.Name = "miListaToolStripMenuItem";
+            this.miListaToolStripMenuItem.Size = new System.Drawing.Size(143, 48);
+            this.miListaToolStripMenuItem.Text = "Mi Lista";
+            this.miListaToolStripMenuItem.Click += new System.EventHandler(this.miListaToolStripMenuItem_Click);
+            // 
+            // continuarViendoToolStripMenuItem
+            // 
+            this.continuarViendoToolStripMenuItem.Name = "continuarViendoToolStripMenuItem";
+            this.continuarViendoToolStripMenuItem.Size = new System.Drawing.Size(275, 48);
+            this.continuarViendoToolStripMenuItem.Text = "Continuar Viendo";
+            // 
+            // gbMiLista
+            // 
+            this.gbMiLista.Controls.Add(this.gbContinuarViendo);
+            this.gbMiLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbMiLista.ForeColor = System.Drawing.Color.White;
+            this.gbMiLista.Location = new System.Drawing.Point(12, 459);
+            this.gbMiLista.Name = "gbMiLista";
+            this.gbMiLista.Size = new System.Drawing.Size(1624, 178);
+            this.gbMiLista.TabIndex = 5;
+            this.gbMiLista.TabStop = false;
+            this.gbMiLista.Text = "Mi Lista";
+            this.gbMiLista.Visible = false;
+            // 
+            // gbContinuarViendo
+            // 
+            this.gbContinuarViendo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbContinuarViendo.ForeColor = System.Drawing.Color.White;
+            this.gbContinuarViendo.Location = new System.Drawing.Point(0, 28);
+            this.gbContinuarViendo.Name = "gbContinuarViendo";
+            this.gbContinuarViendo.Size = new System.Drawing.Size(1624, 178);
+            this.gbContinuarViendo.TabIndex = 6;
+            this.gbContinuarViendo.TabStop = false;
+            this.gbContinuarViendo.Text = "Continuar Viendo";
+            this.gbContinuarViendo.Visible = false;
             // 
             // Feed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1893, 1329);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.ClientSize = new System.Drawing.Size(1673, 1459);
+            this.Controls.Add(this.gbMiLista);
+            this.Controls.Add(this.gbNationalGeographic);
+            this.Controls.Add(this.gbStarWars);
+            this.Controls.Add(this.gbMarvel);
+            this.Controls.Add(this.gbPixar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVerPeli);
             this.Controls.Add(this.gbPeliculaLista);
             this.Controls.Add(this.btnAgregarList);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Feed";
             this.Text = "Feed";
             this.Load += new System.EventHandler(this.Feed_Load);
             this.gbPeliculaLista.ResumeLayout(false);
             this.gbPeliculaLista.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.gbMiLista.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button btnAgregarList;
         private System.Windows.Forms.GroupBox gbPeliculaLista;
         private System.Windows.Forms.Label label3;
@@ -209,5 +310,15 @@ namespace DisneyPlus___Proyecto_1
         private System.Windows.Forms.Label lblNombreLista;
         private System.Windows.Forms.Button btnVerPeli;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbPixar;
+        private System.Windows.Forms.GroupBox gbMarvel;
+        private System.Windows.Forms.GroupBox gbStarWars;
+        private System.Windows.Forms.GroupBox gbNationalGeographic;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem disneyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miListaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem continuarViendoToolStripMenuItem;
+        private System.Windows.Forms.GroupBox gbMiLista;
+        private System.Windows.Forms.GroupBox gbContinuarViendo;
     }
 }

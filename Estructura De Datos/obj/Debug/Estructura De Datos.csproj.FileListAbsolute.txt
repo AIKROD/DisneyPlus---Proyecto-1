@@ -28,3 +28,13 @@ C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\Estructura De Dato
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.csproj.CoreCompileInputs.cache
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.exe
 C:\Users\kevin.rodriguez\Source\Repos\DisneyPlus---Proyecto-1\Estructura De Datos\obj\Debug\Estructura De Datos.pdb
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\bin\Debug\Estructura De Datos.exe.config
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\bin\Debug\Estructura De Datos.exe
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\bin\Debug\Estructura De Datos.pdb
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura De Datos.csprojAssemblyReference.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura_De_Datos.Form1.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura_De_Datos.Properties.Resources.resources
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura De Datos.csproj.GenerateResource.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura De Datos.csproj.CoreCompileInputs.cache
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura De Datos.exe
+C:\Users\tskev\source\repos\DisneyPlus - Proyecto 1\Estructura De Datos\obj\Debug\Estructura De Datos.pdb
