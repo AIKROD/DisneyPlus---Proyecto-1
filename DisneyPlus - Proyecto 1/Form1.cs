@@ -42,11 +42,15 @@ namespace DisneyPlus___Proyecto_1
         {
             Perfiles perfil = new Perfiles("astridG","Astrid");
             Usuarios.insertarAlFinal(perfil);
-            perfil = new Perfiles("Kevin:)","Kevin");
+            usuario1.Text = perfil.usuario;
+            perfil = new Perfiles("Kevin :)","Kevin");
+            usuario2.Text = perfil.usuario;
             Usuarios.insertarAlFinal(perfil);
             perfil = new Perfiles("Michi", "Michael");
+            usuario3.Text = perfil.usuario;
             Usuarios.insertarAlFinal(perfil);
             perfil = new Perfiles("Admin", "Administrador");
+            usuario4.Text = perfil.usuario;
             Usuarios.insertarAlFinal(perfil);
 
         }
@@ -78,6 +82,11 @@ namespace DisneyPlus___Proyecto_1
             numero_usuario = 1;
             Feed frm = new Feed(this);
             frm.Show();
+        }
+
+        private void usuario1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

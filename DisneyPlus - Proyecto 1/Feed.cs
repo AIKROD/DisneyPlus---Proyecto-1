@@ -205,7 +205,6 @@ namespace DisneyPlus___Proyecto_1
         {
             
             Pelicula pelicula = new Pelicula(lblNombreLista.Text, Int32.Parse(lblAnioLista.Text),  lblCategoriaLista.Text);
-            frm1.Mi_Lista.insertar(pelicula);
             if (frm1.numero_usuario == 1)
             {
                 frm1.Mi_Lista.insertar(pelicula);
@@ -379,6 +378,13 @@ namespace DisneyPlus___Proyecto_1
             RecorrerLista_feed(frm1.Marvel, "Marvel");
             RecorrerLista_feed(frm1.Star_Wars, "Star Wars");
             RecorrerLista_feed(frm1.National_Geographic, "National Geographic");
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            LimpiarGrupos();
+            this.Close();
         }
     }
 }
